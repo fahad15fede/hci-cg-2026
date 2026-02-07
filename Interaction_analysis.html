@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>comparison between Norman and GOMS by example</title>
+</head>
+<body style="font-size: larger; font-family: Arial, sans-serif; background-color: #f5f5f5;">
+
+  <!-- Navigation links for user -->
+   <nav aria-label="Primary navigation" style="background-color: #5DADE2; padding: 10px;">
+  <ul style="list-style: none;">
+    <li><a href="index.html" style="color: #ffffff; font-size: 18px; font-family: Arial, sans-serif;">Home</a></li>
+    <li><a href="desc_of_all_models.html" style="color: #ffffff; font-size: 18px; font-family: Arial, sans-serif;">Intro to models</a></li>
+    <li><a href="conclusion.html" style="color: #ffffff; font-size: 18px; font-family: Arial, sans-serif;">Summary of Differences</a></li>
+  </ul>
+</nav>
+
+  <h1 style="color: #5DADE2; font-family: Georgia, serif; font-size: 32px;">Norman VS GOMS - Comparison Analysis</h1>
+
+  <section>
+  <h2 style="color: #34495e; font-family: Georgia, serif; font-size: 26px;">Norman vs. GOMS Comparison Table</h2>
+
+  <table border="1">
+    <caption>
+      Comparison of Norman’s stages and GOMS concepts using the “Take a Photo” task on Xiaomi Redmi 14C
+    </caption>
+
+    <thead>
+      <tr style="background-color: rgb(26, 169, 247);">
+        <th scope="col">Norman’s Stage</th>
+        <th scope="col">Real-World Example (Xiaomi Redmi 14C)</th>
+        <th scope="col">GOMS Interpretation &amp; Rationale<br>GOMS (1983) vs. Norman (1988)</th>
+        <th scope="col">Alignment Analysis</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr class="norman-goms-match">
+        <th scope="row">
+          Goal ↔ GOAL<br>
+          (User intention)
+        </th>
+        <td>
+          “I want to take a picture.”
+        </td>
+        <td style="background-color: rgb(103, 255, 103);">
+          <strong>Goal:</strong> Capture-Photo.<br><br>
+          This is the top-level objective in the GOMS hierarchy.
+        </td>
+        <td style="background-color: rgb(103, 255, 103);">
+          <strong>Perfect Match</strong><br>
+          Both models begin with an explicit user intention.
+        </td>
+      </tr>
+
+      <tr class="norman-goms-match">
+        <th scope="row">
+          Plan ↔ METHOD &amp; Selection Rules<br><br>
+          Cognitive decision before action
+        </th>
+        <td>
+          Decision (Mental Planning):<br>
+          “I’ll open the Camera app from the home screen.”<br><br>
+
+          Alternative methods could include:
+          • Lock-screen camera shortcut
+          • Double-press power button (if enabled)
+        </td>
+        <td style="background-color: rgb(103, 255, 103);">
+          <strong>Method:</strong><br>
+          Open Camera App → Frame subject → Tap Shutter.<br><br>
+
+          <strong>Selection Rule (optional):</strong><br>
+          If phone is unlocked → use Home-Screen-Camera-Method.
+        </td>
+        <td style="background-color: rgb(103, 255, 103);">
+          <strong>Conceptual Match</strong><br><br>
+          Norman’s “Plan” corresponds to GOMS “Method.”<br>
+          Selection Rules are explicit in GOMS, implicit in Norman.
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">Specify</th>
+        <td>
+          Perceptual &amp; cognitive work:<br><br>
+          • User visually identifies the Camera icon.<br>
+          • Inside the app, user frames the subject on the screen.<br><br>
+
+          This involves perception, interpretation, and intention refinement.
+        </td>
+        <td style="background-color: rgb(255, 75, 75);">
+          <strong>Not Explicitly Modeled.</strong><br><br>
+          GOMS assumes the user already knows what object to interact with.<br>
+          KLM may include a mental operator [M], but it does not capture visual interpretation.
+        </td>
+        <td style="background-color: rgb(255, 75, 75);">
+          <strong>Key Divergence</strong><br><br>
+          Norman explains perceptual understanding;<br>
+          GOMS abstracts it away.
+        </td>
+      </tr>
+
+      <tr class="norman-goms-match">
+        <th scope="row">Execute ↔ OPERATOR</th>
+        <td>
+          Physical actions:<br><br>
+          • Think about object to take picture<br>
+          • Tap Camera icon<br>
+          • Point camera at target<br>
+          • Tap Screen for focused picture<br>
+          • Tap Shutter button to take photo
+        </td>
+        <td style="background-color: rgb(248, 242, 83);">
+          <strong>Operators:</strong><br>
+          • [M] Think about object to take picture -(~1.35s)<br>
+          • [K] Tap Camera icon (~0.28s)<br>
+          • [P] Point camera at target(~1.10s)<br>
+          • [K] Tap Screen for focused picture(~0.2)<br>
+          • [P] Point finger to shutter(~1.10s)<br>
+          • [K] Tap shutter button(~0.2s)<br><br>
+
+          <strong>KLM Sequence:</strong><br>
+          [M][K][P][K][P][K] 
+        </td>
+        <td style="background-color: rgb(248, 242, 83);">
+          <strong>Almost Match</strong><br>
+          Almost all motor actions are modeled in GOMS/KLM.
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">Perceive / Interpret / Evaluate</th>
+        <td>
+          Feedback loop:<br><br>
+          1. Perceive: Screen flash + shutter sound<br>
+          2. Interpret: “Photo has been captured.”<br>
+          3. Evaluate: Thumbnail preview appears in gallery corner
+        </td>
+        <td style="background-color: rgb(255, 75, 75);">
+          <strong>Not Modeled in GOMS.</strong><br><br>
+          GOMS assumes successful execution equals goal completion.<br>
+          No evaluation or feedback stage exists.
+        </td>
+        <td style="background-color: rgb(255, 75, 75);">
+          <strong>Fundamental Divergence</strong><br><br>
+          Norman emphasizes feedback and error detection;<br>
+          GOMS ignores post-action evaluation.
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</section>
+
+</body>
+</html>
